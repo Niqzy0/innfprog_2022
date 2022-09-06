@@ -45,10 +45,10 @@
 
     <script>
         //Oppgave 1: Spillernavn
-        const playerName = "Hiof"
+        const playerName = "Mathias"
         document.getElementById("playername").innerHTML = playerName
         //Oppgave 2: Penger
-        let coins = 15
+        let coins = 0
         document.getElementById("coins-count").innerHTML = coins
         //Oppgave 3: Liv
         let lives = 5
@@ -68,6 +68,14 @@
         //Oppgave 6: Utskrift av level
         let level = 1
         document.getElementById("level-count").innerHTML = level
+
+        // if-else test for å vise collect coins om coins-count er 0.
+        if (coins === 0) {
+            document.getElementById("coins-count").innerHTML = "Collect some coins"
+        }
+        //
+
+
     </script>
 </body>
 </html>
